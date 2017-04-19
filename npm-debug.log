@@ -1,0 +1,107 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.3
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\Users\\joe12\\Desktop\\database_cleaner',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\joe12\AppData\Roaming\npm-cache\string_cleaner\1.1.0\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\joe12\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle string_cleaner@1.1.0~prepublish: string_cleaner@1.1.0
+11 silly lifecycle string_cleaner@1.1.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\joe12\\AppData\\Roaming\\npm-cache\\string_cleaner\\1.1.0\\package.tgz',
+12 verbose tar pack   'C:\\Users\\joe12\\Desktop\\database_cleaner' ]
+13 verbose tarball C:\Users\joe12\AppData\Roaming\npm-cache\string_cleaner\1.1.0\package.tgz
+14 verbose folder C:\Users\joe12\Desktop\database_cleaner
+15 verbose addLocalTarball adding from inside cache C:\Users\joe12\AppData\Roaming\npm-cache\string_cleaner\1.1.0\package.tgz
+16 verbose correctMkdir C:\Users\joe12\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd string_cleaner@1.1.0
+18 verbose afterAdd C:\Users\joe12\AppData\Roaming\npm-cache\string_cleaner\1.1.0\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\joe12\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\joe12\AppData\Roaming\npm-cache\string_cleaner\1.1.0\package\package.json written
+21 silly publish { name: 'string_cleaner',
+21 silly publish   version: '1.1.0',
+21 silly publish   description: 'A basic cleaner for mongo and sql with a hash function',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/ZergRushJoe/database_cleaner.git' },
+21 silly publish   author: { name: 'joseph' },
+21 silly publish   license: 'ISC',
+21 silly publish   bugs: { url: 'https://github.com/ZergRushJoe/database_cleaner/issues' },
+21 silly publish   homepage: 'https://github.com/ZergRushJoe/database_cleaner#readme',
+21 silly publish   gitHead: 'f6d0db3f0d00b2a1d8b9757b4a251785f4416406',
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   _id: 'string_cleaner@1.1.0',
+21 silly publish   _shasum: 'fe02f51b005ffd2d2148b1b8cf5b78c9b61be373',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name string_cleaner
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'string_cleaner',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'string_cleaner',
+26 silly mapToRegistry   name: 'string_cleaner',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/string_cleaner
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading C:\Users\joe12\AppData\Roaming\npm-cache\string_cleaner\1.1.0\package.tgz
+30 verbose request uri https://registry.npmjs.org/string_cleaner
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 9:16:53 PM
+33 verbose request using bearer token for auth
+34 verbose request id e68c60fd6b7174ff
+35 http request PUT https://registry.npmjs.org/string_cleaner
+36 http 403 https://registry.npmjs.org/string_cleaner
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Wed, 19 Apr 2017 01:16:57 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-ord1736-ORD',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1492564617.103590,VS0,VE551',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating C:\Users\joe12\AppData\Roaming\npm-cache\registry.npmjs.org\string_cleaner on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.1.0." : string_cleaner
+40 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
+40 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+40 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
+41 verbose statusCode 403
+42 verbose pkgid string_cleaner
+43 verbose cwd C:\Users\joe12\Desktop\database_cleaner
+44 error Windows_NT 10.0.14393
+45 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error node v6.9.3
+47 error npm  v3.10.10
+48 error code E403
+49 error "You cannot publish over the previously published version 1.1.0." : string_cleaner
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
