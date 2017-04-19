@@ -24,3 +24,4 @@ class cleaner
         }
     }
 }
+module.exports = new cleaner();

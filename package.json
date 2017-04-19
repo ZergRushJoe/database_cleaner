@@ -1,6 +1,6 @@
 {
-  "name": "cleaner",
-  "version": "1.0.0",
+  "name": "string_cleaner",
+  "version": "1.1.0",
   "description": "A basic cleaner for mongo and sql with a hash function",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/ZergRushJoe/database_cleaner.git"
   },
-  "author": "Joseph Karp",
+  "author": "joseph",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ZergRushJoe/database_cleaner/issues"
