@@ -9,7 +9,7 @@ class cleaner
     }
     mongoClean(string)
     {
-        return string.replace(/[=|{}"'/]/g,'')
+        return string.replace(/[=|&{}"'/]/g,'')
     }
     sqlClean(string)
     {
